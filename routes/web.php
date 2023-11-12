@@ -66,8 +66,8 @@ Route::post('municipalidad/agregar', [MunicipalidadController::class, 'guardarMu
 
 //REPORTE
 Route::get('reporte/agregar', [ReporteController::class, 'agregarReporte']);
-Route::get('reporte/agregar', [ReporteController::class, 'guardarReporte']);
+Route::post('reporte/agregar', [ReporteController::class, 'guardarReporte']);
 
 //EVENTO
 Route::get('evento/agregar', [EventoController::class, 'agregarEvento']);
-Route::get('evento/agregar', [EventoController::class, 'guardarEvento']);
+Route::post('evento/agregar', [EventoController::class, 'guardarEvento']);
