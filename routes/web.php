@@ -41,25 +41,33 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 //ESTABLECIMIENTO
-Route::get('establecimiento/direccion', [EstablecimientoController::class, 'mostrarEstablecimiento']);
 
+Route::get('establecimiento/direccion', [EstablecimientoController::class, 'mostrarEstablecimiento']);
+Route::post('establecimiento/direccion', [EstablecimientoController::class, 'guardarEstablecimiento']);
 //DISTRITO
 Route::get('distrito/agregar', [DistritoController::class,'agregarDistrito']);
+Route::post('distrito/agregar', [DistritoController::class, 'guardarDistrito']);
 
 //RESPONSABLE
 Route::get('responsable/agregar', [ResponsableController::class,'agregarResponsable']);
+Route::post('responsable/agregar', [ResponsableController::class, 'guardarResponsable']);
 
 //COMUNICACION
 Route::get('comunicacion/agregar', [ComunicacionController::class, 'agregarComunicacion']);
+Route::post('comunicacion/agregar', [ComunicacionController::class, 'guardarComunicacion']);
 
 //CAPACITACION
 Route::get('capacitacion/agregar', [CapacitacionController::class, 'agregarCapacitacion']);
+Route::post('capacitacion/agregar', [CapacitacionController::class, 'guardarCapacitacion']);
 
 //MUNICIPALIDAD
 Route::get('municipalidad/agregar', [MunicipalidadController::class, 'agregarMunicipalidad']);
+Route::post('municipalidad/agregar', [MunicipalidadController::class, 'guardarMunicipalidad']);
 
 //REPORTE
 Route::get('reporte/agregar', [ReporteController::class, 'agregarReporte']);
+Route::get('reporte/agregar', [ReporteController::class, 'guardarReporte']);
 
 //EVENTO
 Route::get('evento/agregar', [EventoController::class, 'agregarEvento']);
+Route::get('evento/agregar', [EventoController::class, 'guardarEvento']);

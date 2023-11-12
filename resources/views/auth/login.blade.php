@@ -52,7 +52,7 @@
                         </div>
 
                         <div class="row mb-0" >
-                            <div class="col-md-8 offset-md-4" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >
+                            <div class="col-md-8 offset-md-4" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"0 >
                                 <button type="submit" class="btn btn-primary" >
                                     {{ __('Login') }}
                                 </button>

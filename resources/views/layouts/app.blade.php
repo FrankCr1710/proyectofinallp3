@@ -30,7 +30,33 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="/distrito/agregar"> Distrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/responsable/agregar"> Responsable</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/establecimiento/direccion"> Establecimiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/comunicacion/agregar"> Comunicacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/municipalidad/agregar"> Municipalidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/capacitacion/agregar"> Capacitacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/reporte/agregar"> Reporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/evento/agregar"> Evento</a>
+                        </li>
+                        
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
