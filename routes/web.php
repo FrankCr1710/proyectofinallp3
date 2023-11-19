@@ -45,8 +45,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('establecimiento/direccion', [EstablecimientoController::class, 'mostrarEstablecimiento']);
 Route::post('establecimiento/direccion', [EstablecimientoController::class, 'guardarEstablecimiento']);
 //DISTRITO
-Route::get('distrito/agregar', [DistritoController::class,'agregarDistrito']);
+Route::get('distrito/agregar', [DistritoController::class,'agregarDistrito'])->name('distrito.agregar');;
 Route::post('distrito/agregar', [DistritoController::class, 'guardarDistrito']);
+Route::delete('/distrito/eliminar/{id}', [DistritoController::class, 'eliminarDistrito'])->name('distrito.eliminar');
+
 
 //RESPONSABLE
 Route::get('responsable/agregar', [ResponsableController::class,'agregarResponsable']);
